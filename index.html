@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renaissance Pomodoro Timer</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="responsive-wrapper">
+    <div class="timer-card">
+      <div class="corner top-left">✦</div>
+      <div class="corner top-right">✦</div>
+      <div class="corner bottom-left">✦</div>
+      <div class="corner bottom-right">✦</div>
+      
+      <div class="card-content">
+        <!-- Session state header label -->
+        <h1 id="timer-label">STUDY SESSION</h1>
+        <div class="ornament">❖ ────── ❖</div>
+        
+        <!-- Large countdown display digits -->
+        <div id="time-display">25:00</div>
+        
+        <!-- Minimal interactive toggle buttons -->
+        <div class="controls-row">
+          <button id="start-btn" onclick="toggleTimer()">START</button>
+          <button id="reset-btn" onclick="resetTimer()">RESET</button>
+        </div>
+        
+        <div class="ornament-small">❖</div>
+        <p id="renaissance-phrase">“Patience is the companion of wisdom.”</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
